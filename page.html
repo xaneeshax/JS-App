@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Flags</title>
+
+    <header>
+        <h1 id=remark>Label the Flags of the World!</h1>
+    </header>
+
+  </head>
+  
+  <body>
+
+    <div class="sidenav">
+        <a href="#about">Flags of North America</a>
+        <a href="#services">Flags of South America</a>
+        <a href="#clients">Flags of Europe</a>
+        <a href="#contact">Flags of Asia</a>
+    </div>
+
+    <div class="content">
+        <div class="score-board">
+            <div id="user-correct" class="badge">Correct</div>
+            <div id="user-incorrect" class="badge">Incorrect</div>
+            <span id="score-correct">0</span> : <span id="score-incorrect">0</span>
+    
+        </div>
+    
+        <div id="flag-image">
+            <div class="option" id="f">
+                <img id="pic-name" src="" alt="">
+            </div>
+        </div>
+    
+        <div id="user-input"> 
+            <label for="guess" id="guess-label">Your guess:</label>
+            <input type="text" id="user-guess" placeholder="country">
+            <button id="workit"><span>Get Score!</span></button><br>
+            <ul id="incorrect"></ul>
+        </div>
+
+    </div>
+    
+    <script src="flags.js" charset="utf-8"></script>
+  
+  </body>
+</html>

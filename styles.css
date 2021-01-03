@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("scenes/default2.jpg");
+    background-color: #96d2dd;
+    height: 100%;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header {
+    background-color: rgb(8, 71, 80);
+    padding: 20px;
+}
+
+header > h1 {
+    color:#dfe5f0;
+    text-align : center;
+    font-family: 'Oranienbaum', serif;
+    font-size: 50px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 70;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 20px 16px;
+    text-decoration: none;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color: #96d2dd;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid rgb(8, 71, 80);
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: rgb(8, 71, 80);
+    font-size: 46 px;
+    padding: 15px 20px;
+    font-family: 'Oranienbaum', serif;
+    position: relative;
+}
+
+.badge {
+    background: #E2584D;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: 'Oranienbaum', serif;
+}
+
+#user-correct {
+    position: absolute;
+    top: 15px;
+    left: -25px;
+}
+
+#user-incorrect {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+}
+
+
+#user-input {
+    margin: 50px auto;
+    color:  black;
+    font-family: 'Oranienbaum', serif;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+
+#flag-image {
+    margin-top: 50px;
+    text-align: center;
+    padding: 1px;
+
+}
+
+#workit {
+    background-color:rgb(255, 255, 255);
+    font-family: 'Oranienbaum', serif;
+    font-size: 18px;
+    color:  rgb(8, 71, 80);
+    width: 120px;
+    height: 40px;
+    border: 1px solid  rgb(70, 130, 139);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#workit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+  
+#workit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+#workit:hover span {
+    padding-right: 25px;
+    
+  }
+  
+#workit:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#workit:hover {
+    cursor: pointer;
+    background: rgb(8, 71, 80);
+    color:rgb(255, 255, 255);
+} 
+
+h2 {
+    color: rgb(8, 71, 80);
+    padding: 100px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'Oranienbaum', serif;
+}
+
+#incorrect {
+    padding: 20px;
+}
+
+#user-guess {
+    border: none;
+    background-color: #96d2dd;
+    border-bottom: 2px solid rgb(8, 71, 80);
+    padding: 8px 45px;
+}
+
+
+.green-glow {
+    color: #4dcc7d;
+    text-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    color: #fc121b;
+    text-shadow: 0 0 10px #d01115;
+}
